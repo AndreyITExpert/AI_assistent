@@ -1,6 +1,11 @@
 # Проект: ИИ-ассистент фитнес-клуба
 
-Ссылка на проект 
+Ссылки на проект 
+
+![Диалог №1 бота](https://github.com/AndreyITExpert/AI_assistent/blob/main/%D0%94%D0%B8%D0%B0%D0%BB%D0%BE%D0%B3_%D0%B1%D0%BE%D1%82%D0%B01.jpg?raw=true)
+![Диалог №2 бота](https://github.com/AndreyITExpert/AI_assistent/blob/main/%D0%94%D0%B8%D0%B0%D0%BB%D0%BE%D0%B3_%D0%B1%D0%BE%D1%82%D0%B02.jpg?raw=true)
+![Запись на тренировку в Google Календаре](https://github.com/AndreyITExpert/AI_assistent/blob/main/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B2%20Google%20%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%B5.jpg?raw=true)
+![Тест бота в Savvy](https://github.com/AndreyITExpert/AI_assistent/blob/main/%D0%A2%D0%B5%D1%81%D1%82%20%D0%B1%D0%BE%D1%82%D0%B0%20%D0%B2%20Savvy.jpg?raw=true)
 
 ## Описание проекта
 
