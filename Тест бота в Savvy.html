@@ -1,0 +1,647 @@
+    <!doctype html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>67bc8d2ff7cdd2232db458d3</title>
+      <style>
+        body {
+          font-family: Montserrat, sans-serif;
+          background-color: #f4f4f4;
+        }
+        .title-container {
+          text-align: center;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        table {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        p {
+          margin: auto;
+        }
+        table {
+          margin-left: 10px;
+        }
+        table,
+        th,
+        td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 7px;
+        }
+        img {
+          width: 400px;
+        }
+        .title-text {
+          text-align: center;
+          background-color: #007bff;
+          color: white;
+          padding: 10px;
+          border-radius: 8px;
+          margin: 20px auto;
+          display: inline-block;
+        }
+        .chat-container {
+          max-width: 1000px;
+          margin: auto;
+          background-color: white;
+          border-radius: 8px;
+          padding: 20px;
+        }
+        .message-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 10px 0;
+        }
+        .message-wrapper.outgoing {
+          align-items: flex-end;
+        }
+        .message-wrapper.system {
+          align-items: center; /* Выравнивание по центру для системных сообщений */
+        }
+        .message-wrapper.function {
+          align-items: flex-start; /* Выравнивание по верхнему краю для функциональных сообщений */
+        }
+        .message-box {
+          border-radius: 15px;
+          display: inline-block;
+        }
+        .outgoing .message-box {
+          background-color: #e6f7ff;
+          border-top-right-radius: 0px;
+        }
+        .incoming .message-box {
+          background-color: #fff;
+          border-top-left-radius: 0px;
+        }
+        .message {
+          padding: 10px 20px;
+          border: 1px solid #ccc;
+          border-radius: 15px;
+        }
+        .message-file {
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          gap: 0.5rem;
+          color: black;
+          text-decoration: none;
+        }
+        .message-file svg {
+          height: 2rem;
+          min-height: 24px;
+          width: 2rem;
+          min-width: 24px;
+        }
+        .outgoing .message {
+          border-top-right-radius: 0px;
+        }
+        .employee {
+          background-color: #b5e3f9;
+        }
+        .incoming .message {
+          border-top-left-radius: 0px;
+        }
+        .system .message-box,
+        .function .message-box {
+          background: none;
+          border: none;
+        }
+        .system .message,
+        .function .message {
+          display: none;
+        }
+        .user-name {
+          font-size: small;
+          font-weight: bold;
+        }
+        .debug-wrapper {
+          color: red;
+          font-weight: 600;
+          padding-left: 4px;
+          cursor: pointer;
+          font-size: 18px;
+        }
+        .additional-label {
+          display: flex;
+          align-items: center;
+        }
+        .additional-label button {
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #007bff;
+          font-size: small;
+          margin-left: 10px;
+        }
+        .additional-label {
+          color: #888;
+          font-size: small;
+          margin: 2px 0;
+        }
+        .image-wrapper {
+          padding: 0 0 10px;
+        }
+        .image-wrapper > .additional-label {
+          padding: 0 10px;
+        }
+        .message-box .additional-label button {
+          color: black;
+        }
+        .information {
+          text-align: center;
+          color: #7f7f7f;
+        }
+        .system {
+          text-align: center;
+          color: #000000;
+        }
+        .modal, .modal-custom {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content {
+          position: relative;
+          background-color: #edf4ff;
+          margin: 3% auto;
+          padding: 20px;
+          border: 1px solid #0078ff;
+          width: 80%;
+          max-width: 600px;
+          text-align: left;
+          border-radius: 5px;
+          white-space: pre-wrap;
+          height: 70vh;
+          overflow: scroll;
+        }
+        .modal-custom  .modal-content {
+          white-space: normal;
+        }
+        .close {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #aaa;
+          font-size: 40px;
+          font-weight: bold;
+        }
+        .close:hover, .close:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      </style>
+    </head>
+    <body>,
+      <div class="title-container">
+        <h1 class="title-text">Андрей Гусаков</h1>
+      </div>
+      <div class="chat-container">
+      <div class="information">_id: 67bc8d2ff7cdd2232db458d3</div>
+      <div class="information">Email: bowfinger78@gmail.com</div>
+      <div class="information">Bot: BULL GYM</div>
+      <div class="information">Placeholders: {
+  "name": "Андрей Гусаков"
+}</div>
+      <div class="information">Dialogue fields: {}</div>
+      
+      
+        <div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    Привет
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:41">26.02.2025, 21:41 1996 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Здравствуйте! Чем могу вам помочь? Хотите записаться на тренировку, узнать расписание или получить информацию о наших услугах?
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:42">26.02.2025, 21:42 29 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    Записаться на тренировку
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:42">26.02.2025, 21:42 2037 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Отлично! Подскажите, пожалуйста, ваше имя и номер телефона, чтобы я мог оформить запись.
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:42">26.02.2025, 21:42 24 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    Вася 89001234567
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:44">26.02.2025, 21:44 2075 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Приятно познакомиться, Вася! На какую дату вы хотели бы записаться? Наши часы работы с 8:00 до 22:00.
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:44">26.02.2025, 21:44 36 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    следующий четверг вечером
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:44">26.02.2025, 21:44 4328 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ⚙️ Выполняется функция google_calendar_get_busy(datetime_min=2025-03-06T08:00:00+03:00, datetime_max=2025-03-06T22:00:00+03:00, calendar_ids=[bowfinger78@gmail.com])
+        </div>
+      </div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ✅ Выполнена функция
+          <button onclick="openModal(`{
+    &quot;bowfinger78@gmail.com&quot;: {
+        &quot;busy&quot;: []
+    }
+}`, false)">
+            ℹ️
+          </button>
+          
+        </div>
+      </div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Следующий четверг, 6 марта, вечером у нас пока всё свободно. Какое время вам будет удобнее? Например, 18:00, 19:00 или другое?
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:44">26.02.2025, 21:44 104 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    20
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:45">26.02.2025, 21:45 4639 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ⚙️ Выполняется функция google_calendar_create_event(calendar_id=bowfinger78@gmail.com, summary=Тренировка Вася в BULL GYM, description=Имя клиента: Вася, Телефон: 89001234567, start_datetime=2025-03-06T20:00:00+03:00, end_datetime=2025-03-06T21:00:00+03:00)
+        </div>
+      </div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ✅ Выполнена функция
+          <button onclick="openModal(`{
+    &quot;event_id&quot;: &quot;9rcanpjg6ek0gkd3u85750nlns&quot;,
+    &quot;meet_link&quot;: &quot;&quot;
+}`, false)">
+            ℹ️
+          </button>
+          
+        </div>
+      </div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Я записал вас на тренировку в следующий четверг, 6 марта, на 20:00. Если потребуется помощь или вы захотите что-то изменить, дайте знать! Могу ли я помочь вам с чем-то ещё?
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:45">26.02.2025, 21:45 143 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    измени время записи
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:53">26.02.2025, 21:53 2445 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    На какое время вы хотите перенести тренировку? Наши часы работы с 8:00 до 22:00.
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:53">26.02.2025, 21:53 27 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    18 часов
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:54">26.02.2025, 21:54 7790 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ⚙️ Выполняется функция google_calendar_get_busy(datetime_min=2025-03-06T08:00:00+03:00, datetime_max=2025-03-06T22:00:00+03:00, calendar_ids=[bowfinger78@gmail.com])
+        </div>
+      </div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ✅ Выполнена функция
+          <button onclick="openModal(`{
+    &quot;bowfinger78@gmail.com&quot;: {
+        &quot;busy&quot;: [
+            {
+                &quot;start&quot;: &quot;2025-03-06T20:00:00+03:00&quot;,
+                &quot;end&quot;: &quot;2025-03-06T21:00:00+03:00&quot;
+            }
+        ]
+    }
+}`, false)">
+            ℹ️
+          </button>
+          
+        </div>
+      </div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ⚙️ Выполняется функция google_calendar_update_event(calendar_id=bowfinger78@gmail.com, event_id=9rcanpjg6ek0gkd3u85750nlns, start_datetime=2025-03-06T18:00:00+03:00, end_datetime=2025-03-06T19:00:00+03:00)
+        </div>
+      </div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ✅ Выполнена функция
+          <button onclick="openModal(`{
+    &quot;status&quot;: &quot;Success&quot;
+}`, false)">
+            ℹ️
+          </button>
+          
+        </div>
+      </div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Я перенёс вашу тренировку на четверг, 6 марта, на 18:00. Если у вас появятся ещё вопросы или пожелания, дайте знать! Могу ли я помочь вам с чем-то ещё?
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:54">26.02.2025, 21:54 194 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    /start
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:57">26.02.2025, 21:57 2759 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Здравствуйте! Я помощник фитнес-клуба "BULL GYM". Чем могу вам помочь? Вы можете записаться на тренировку, узнать расписание, выбрать тренера или получить информацию о наших услугах.
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:57">26.02.2025, 21:57 47 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    запиши меня
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:57">26.02.2025, 21:57 2816 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Пожалуйста, напомните ваше имя и номер телефона, чтобы я мог оформить запись.
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:57">26.02.2025, 21:57 21 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    Сергей +71234567890
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:58">26.02.2025, 21:58 2851 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    Приятно познакомиться, Сергей! На какую дату и время вы хотели бы записаться? Наши часы работы с 8:00 до 22:00.
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:58">26.02.2025, 21:58 37 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper outgoing">
+<div class="additional-label"><div class="user-name">Покупатель</div></div>
+<div class="message-box outgoing">
+    <div class="message">
+    среда в 21 час
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:58">26.02.2025, 21:58 5928 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ⚙️ Выполняется функция google_calendar_get_busy(datetime_min=2025-03-05T08:00:00+03:00, datetime_max=2025-03-05T22:00:00+03:00, calendar_ids=[bowfinger78@gmail.com])
+        </div>
+      </div><div class="message-wrapper incoming function">
+        <div class="additional-label">
+          ✅ Выполнена функция
+          <button onclick="openModal(`{
+    &quot;bowfinger78@gmail.com&quot;: {
+        &quot;busy&quot;: [
+            {
+                &quot;start&quot;: &quot;2025-03-05T21:00:00+03:00&quot;,
+                &quot;end&quot;: &quot;2025-03-05T22:00:00+03:00&quot;
+            }
+        ]
+    }
+}`, false)">
+            ℹ️
+          </button>
+          
+        </div>
+      </div><div class="message-wrapper incoming">
+<div class="additional-label"><div class="user-name">Савви</div></div>
+<div class="message-box incoming">
+    <div class="message">
+    К сожалению, на среду, 5 марта, в 21:00 уже занято. Могу предложить другое время в этот день, например, 20:00, или выбрать другую дату? Что вам удобнее?
+    <div class="additional-label">
+      <div class="user-name" title="26.02.2025, 18:58">26.02.2025, 21:58 112 токенов</div>
+      
+    </div>
+  </div>
+</div>
+</div>
+        <div class="information">
+  Всего токенов: 40438
+  </div>
+      </div>
+
+  ,<script>
+        function openModal(text, isInnerHTML) {
+        console.log(text);
+          var modal = document.createElement("div");
+          modal.classList.add("modal");
+  
+          var modalContent = document.createElement("div");
+          modalContent.classList.add("modal-content");
+  
+          var closeBtn = document.createElement("span");
+          closeBtn.classList.add("close");
+          closeBtn.innerHTML = "&times; ";
+          closeBtn.onclick = closeModal;
+  
+          if (isInnerHTML)
+            modalContent.innerHTML = text;
+          else if (!isInnerHTML)
+            modalContent.textContent = text;
+  
+          modalContent.appendChild(closeBtn);
+          modal.appendChild(modalContent);
+  
+          document.body.appendChild(modal);
+  
+          modal.style.display = "block";
+  
+          document.addEventListener("click", outsideClickHandler);
+        }
+
+function openCustomModal(id) {
+  let modal = document.getElementById(id);
+
+  //modal = document.getElementById(id);
+
+  var closeBtn = document.getElementById(`close-${id}`);
+  
+  // Обработчик для кнопки закрытия
+  closeBtn.onclick = closeCustomModal;
+
+  // Показываем модальное окно
+  modal.style.display = "block";
+
+  document.body.appendChild(modal);
+
+  // Обработчик для клика вне модального окна
+  //document.addEventListener("click", outsideCustomClickHandler);
+
+  function closeCustomModal() {
+    console.log("closeCustomModal", id);
+
+    // Перемещаем окно обратно в начало родителя
+    document.body.insertBefore(modal, document.body.firstChild);
+
+    // Скрываем модальное окно
+    modal.style.display = "none";
+
+    // Удаляем обработчики событий
+    //closeBtn.removeEventListener("click", closeCustomModal);
+    //document.removeEventListener("click", outsideCustomClickHandler);
+  }
+
+  // function outsideCustomClickHandler(event) {
+  //   // Проверяем, что клик был за пределами модального окна
+  //   if (event.target !== modal && !modal.contains(event.target)) {
+  //     closeCustomModal();
+  //   }
+  // }
+
+  // Предотвращаем закрытие при клике внутри модального окна
+  // modal.addEventListener("click", function(event) {
+  //   event.stopPropagation();
+  // });
+}
+
+  
+        function closeModal() {
+          var modal = document.querySelector(".modal");
+          modal.parentNode.removeChild(modal);
+  
+          document.removeEventListener("click", outsideClickHandler);
+        }
+  
+        function outsideClickHandler(event) {
+          var modal = document.querySelector(".modal");
+          if (event.target === modal) {
+            closeModal();
+          }
+        }
+      </script>
+    </body>
+  </html>
